@@ -1,4 +1,4 @@
-org: trainwithshubham
+org: shivam087r
 app: aws-node-http-api-project
 service: aws-node-http-api-project
 frameworkVersion: '3'
@@ -12,7 +12,7 @@ provider:
       Action:
         - dynamodb:*
       Resource:
-        - arn:aws:dynamodb:us-east-1:626072240565:table/KaamKaro
+        - arn:aws:dynamodb:us-east-1:626072240565:table/InsertToDo
 
 functions:
   hello:
@@ -22,7 +22,7 @@ functions:
           path: /
           method: get
   kaamBharo:
-    handler: src/kaamBharo.handler
+    handler: src/InsertToDo.handler
     events:
       - httpApi:
           path: /kaam
@@ -45,7 +45,7 @@ resources:
     KaamKaro:
       Type: AWS::DynamoDB::Table
       Properties:
-        TableName: KaamKaro
+        TableName: InsertToDo
         BillingMode: PAY_PER_REQUEST
         AttributeDefinitions:
           - AttributeName: id
