@@ -12,7 +12,7 @@ provider:
       Action:
         - dynamodb:*
       Resource:
-        - arn:aws:dynamodb:us-east-1:626072240565:table/InsertToDo
+        - arn:aws:dynamodb:us-east-1:318499227335:table/InsertToDo
 
 functions:
   hello:
