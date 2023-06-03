@@ -9,7 +9,7 @@ const kaamDikhao = async (event) => {
 
   try{
   const result = await dynamoDb.scan({
-    TableName: "KaamKaro"
+    TableName: "InsertToDo"
   }).promise();
   kaam = result.Items;
   }catch(err){
