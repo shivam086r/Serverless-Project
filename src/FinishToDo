@@ -1,7 +1,7 @@
 "use strict";
 const AWS = require("aws-sdk");
 
-const kaamKhatamkaro = async (event) => {
+const FinishToDo = async (event) => {
 
   const dynamoDb = new AWS.DynamoDB.DocumentClient();
 
@@ -18,10 +18,10 @@ const kaamKhatamkaro = async (event) => {
 
   return {
     statusCode: 200,
-    body: JSON.stringify({msg:"Kaam Khatam Kar Diya"}),
+    body: JSON.stringify({msg:"Work is done"}),
     };
 };
 
 module.exports = {
-    handler: kaamKhatamkaro,
+    handler: FinishToDo,
 };
