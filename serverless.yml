@@ -21,20 +21,20 @@ functions:
       - httpApi:
           path: /
           method: get
-  kaamBharo:
+  InsertToDo:
     handler: src/InsertToDo.handler
     events:
       - httpApi:
           path: /kaam
           method: post
-  kaamDikhao:
-    handler: src/kaamDikhao.handler
+  Showtodo:
+    handler: src/ShowToDo.handler
     events:
       - httpApi:
           path: /kaam
           method: get
-  kaamKhatamKaro:
-    handler: src/kaamKhatamKaro.handler
+  FinishToDo:
+    handler: src/FinishToDo.handler
     events:
       - httpApi:
           path: /kaam/{id}
@@ -42,7 +42,7 @@ functions:
 
 resources:
   Resources:
-    KaamKaro:
+    InsertToDo:
       Type: AWS::DynamoDB::Table
       Properties:
         TableName: InsertToDo
