@@ -8,13 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LondheShubham153/aws-node-http-api-project.git"
+    "url": "git+https://github.com/shivam086r/Serverless-Project"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/LondheShubham153/aws-node-http-api-project/issues"
+    "url": "https://github.com/shivam086r/Serverless-Project/issues"
   },
   "homepage": "https://github.com/LondheShubham153/aws-node-http-api-project#readme",
   "dependencies": {
