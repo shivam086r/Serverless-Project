@@ -1,0 +1,57 @@
+##########Serverless project commands######################
+
+sudo apt update
+
+curl -sL https://deb.nodesource.com/setup_14.x | sudo bash -
+
+sudo apt -y install nodejs
+
+node -v
+
+npm -v
+
+mkdir serverless-project
+
+cd serverless-project
+
+sudo npm install -g serverless
+
+serverless
+
+--> Creating a IAM User with admin access for connecting aws with serverless
+
+aws
+
+sudo apt install awscli -y
+
+aws configure
+
+serverless   -------------> choosing node.js HTTP API
+
+                                        
+                                  #### Now doing for real project files are in github ####
+cd severles-project
+
+mkdir full-project
+
+cd full-project
+
+git clone https://github.com/LondheShubham153/aws-node-http-api-project.git
+
+cd aws-node-http-api-project
+
+git checkout dev
+
+ls
+
+npm install
+
+serverless login
+
+serverless
+
+cat package.json
+
+npm install aws-sdk uuid
+
+cd src
